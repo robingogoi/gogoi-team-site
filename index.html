@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gogoi</title>
+<meta name="description" content="gogoi: coming soon.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  @font-face { font-family: Outfit; font-weight: 400; font-display: swap; src: url(Outfit_400Regular.ttf) format("truetype"); }
+  @font-face { font-family: Outfit; font-weight: 700; font-display: swap; src: url(Outfit_700Bold.ttf) format("truetype"); }
+  :root { --ink: #111111; --paper: #FFFFFF; --red: #E10A1E; --grey: #C9C9C9; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--ink); color: var(--paper);
+    font-family: Outfit, system-ui, -apple-system, "Segoe UI", sans-serif;
+    display: flex; flex-direction: column; min-height: 100vh;
+    padding: 24px max(16px, env(safe-area-inset-right)) 24px max(16px, env(safe-area-inset-left));
+  }
+  main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; text-align: center; }
+  .lockup { display: flex; align-items: center; gap: 18px; }
+  .mark { width: 72px; height: 72px; }
+  .word { font-weight: 700; font-size: 64px; letter-spacing: -0.03em; line-height: 1; }
+  .word span { color: var(--red); }
+  .soon { font-size: 20px; color: var(--grey); margin: 0; }
+  a { color: var(--paper); text-underline-offset: 3px; }
+  footer { font-size: 13px; color: var(--grey); text-align: center; line-height: 1.6; }
+  @media (max-width: 420px) { .mark { width: 52px; height: 52px; } .word { font-size: 46px; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="lockup" role="img" aria-label="gogoi">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <g fill="#FFFFFF"><circle cx="90.00" cy="50.00" r="4.6"/><circle cx="86.96" cy="65.31" r="3.2"/><circle cx="78.28" cy="78.28" r="4.6"/><circle cx="65.31" cy="86.96" r="3.2"/><circle cx="50.00" cy="90.00" r="4.6"/><circle cx="34.69" cy="86.96" r="3.2"/><circle cx="21.72" cy="78.28" r="4.6"/><circle cx="13.04" cy="65.31" r="3.2"/><circle cx="10.00" cy="50.00" r="4.6"/><circle cx="13.04" cy="34.69" r="3.2"/><circle cx="21.72" cy="21.72" r="4.6"/><circle cx="34.69" cy="13.04" r="3.2"/><circle cx="50.00" cy="10.00" r="4.6"/><circle cx="65.31" cy="13.04" r="3.2"/><circle cx="78.28" cy="21.72" r="4.6"/><circle cx="86.96" cy="34.69" r="3.2"/></g>
+      <circle cx="50" cy="35" r="9" fill="#E10A1E"/>
+      <rect x="43" y="49" width="14" height="29" rx="7" fill="#E10A1E"/>
+    </svg>
+    <span class="word" aria-hidden="true">gogo<span>i</span></span>
+  </div>
+  <p class="soon">Coming soon.</p>
+  <p class="soon" style="font-size:16px">Get in touch: <a href="mailto:hello@gogoi.team">hello@gogoi.team</a></p>
+</main>
+<footer>
+  © 2026 Gogoi.team Ltd · Registered in England and Wales, company number 17545984<br>
+  Registered office: 71–75 Shelton Street, Covent Garden, London WC2H 9JQ<br>
+  gogoi™ is a trade mark of Gogoi.team Ltd. No cookies, no tracking.
+</footer>
+</body>
+</html>
